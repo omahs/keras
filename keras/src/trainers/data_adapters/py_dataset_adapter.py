@@ -316,7 +316,7 @@ class PyDatasetAdapter(DataAdapter):
             output_signature=self._output_signature,
         )
         if self.enqueuer is not None:
-            # The enqueuer does its own multithreading / multiprocesssing to
+            # The enqueuer does its own multithreading / multiprocessing to
             # prefetch items. Disable the tf.data.Dataset prefetching and
             # threading as it interferes.
             options = tf.data.Options()

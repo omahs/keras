@@ -468,7 +468,7 @@ def prepare_lstm_weights(lstm, kernel, recurrent_kernel, bias, device):
     """Copies kernel and recurrent kernel weights in the Pytorch format
     We split the kernel and recurrent kernel weights, create associated
     torch tensors adapted to be in line with the Cudnn optimization.
-    After we have copied the weights, we ensure the paramters are on
+    After we have copied the weights, we ensure the parameters are on
     the same device and memory layout is optimized for Cudnn.
 
     """
